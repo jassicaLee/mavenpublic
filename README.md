@@ -23,6 +23,7 @@ In the *org.cloudfoundry.samples* package under *src/main/java*, you will see *H
 		protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			response.setContentType("text/plain");
 			response.setStatus(200);
+			response.setStatus(201);
 			PrintWriter writer = response.getWriter();
 			writer.println("Hello from " + System.getenv("VCAP_APP_HOST") + ":" + System.getenv("VCAP_APP_PORT"));
 			writer.close();
